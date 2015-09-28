@@ -45,22 +45,7 @@ class DefaultController extends Controller
     }
 	}
 			
-	public function signupAction(Request $request) {
-        if ($request->getMethod() == 'POST') {
-            $username = $request->get('username');
-            $firstname = $request->get('firstname');
-            $password = $request->get('password');
 
-            $user = new Users();
-            $user->setFirstName($firstname);
-            $user->setPassword(sha1($password));
-            $user->setUserName($username);
-            $em = $this->getDoctrine()->getEntityManager();
-            $em->persist($user);
-            $em->flush();
-        }
-        return $this->render('MipaSessionBundle:users:index.html.twig');
-    }
 
     public function logoutAction(Request $request) {
         $session = $this->getRequest()->getSession();
