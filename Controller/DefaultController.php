@@ -4,6 +4,7 @@ namespace Mipa\SessionBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Security\Core\SecurityContext;
 use Mipa\SessionBundle\Entity\Users;
 use Mipa\SessionBundle\Modals\Login;
 
