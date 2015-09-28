@@ -41,7 +41,7 @@ class DefaultController extends Controller
 
 			} }	
 					
-        return $this->render('MipaSessionBundle:Default:index.html.twig', array('name' => $name));
+        return $this->render('MipaSessionBundle:Default:login.html.twig');
     }
 	}
 			
