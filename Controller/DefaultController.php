@@ -37,12 +37,14 @@ class DefaultController extends Controller
                 $password = $login->getPassword();
                 $user = $repository->findOneBy(array('userName' => $username, 'password' => $password));
                 if ($user) {
-					
-					
+					return $this->render('MipaSessionBundle:Default:welcome.html.twig', array('name' => $user->getFirstName()));
+
+			} }	
 					
         return $this->render('MipaSessionBundle:Default:index.html.twig', array('name' => $name));
     }
-	
+	}
+			
 	public function signupAction(Request $request) {
         if ($request->getMethod() == 'POST') {
             $username = $request->get('username');
