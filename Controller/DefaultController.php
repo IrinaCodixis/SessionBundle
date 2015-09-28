@@ -58,6 +58,10 @@ class DefaultController extends Controller
     public function logoutAction(Request $request) {
         $session = $this->getRequest()->getSession();
         $session->clear();
-        return $this->render('MipaSessionBundle:Default:login.html.twig');
+        return $this->render('MipaSessionBundle:Default:login.html.twig',
+		 array(
+          // last username entered by the user
+          'last_username' => $session->get(SecurityContext::LAST_USERNAME)
+		));
     }
 }
