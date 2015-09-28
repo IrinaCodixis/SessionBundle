@@ -1,7 +1,7 @@
 {%block container %}
     <div class="container">
 
-        <form class="form-signin" method ="POST" action="{{path('mipa_session_login')}}" data-validate="parsley">
+        <form class="form-signin" method ="POST" action="{{path('mipa_session_homepage')}}" data-validate="parsley">
             <h2 class="form-signin-heading">Please sign in</h2>
             <input type="text" id="username" class="input-block-level" name="username" placeholder="Email address" data-trigger="change" data-required="true" data-type="email">
             <input type="password" class="input-block-level" name="password" placeholder="Password" data-trigger="change" data-required="true">
