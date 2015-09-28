@@ -29,7 +29,7 @@ class DefaultController extends Controller
                 }
                 return $this->render('MipaSessionBundle:Default:welcome.html.twig', array('name' => $user->getFirstName()));
             } else {
-                return $this->render('MipaSessionBundle:Default:login.html.twig', array('name' => 'Login Error'));
+                return $this->render('MipaSessionBundle:Default:login.html.twig', array('name' => 'Login Error', 'last_username' => $session->get(SecurityContext::LAST_USERNAME)));
             }
         } else {
             if ($session->has('login')) {
