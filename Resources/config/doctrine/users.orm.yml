@@ -1,0 +1,17 @@
+Mipa\SessionBundle\Entity\users:
+    type: entity
+    table: users
+    id:
+        id:
+            type: integer
+            generator: { strategy: AUTO }
+    fields:
+        userName:
+            type: string
+            length: 30
+        firstName:
+            type: string
+            length: 30
+        password:
+            type: string
+            length: 90
