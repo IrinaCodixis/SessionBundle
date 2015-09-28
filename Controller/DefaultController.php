@@ -41,7 +41,7 @@ class DefaultController extends Controller
 					return $this->render('MipaSessionBundle:Default:welcome.html.twig', array('name' => $user->getFirstName()));
 
 			} }
-			$authenticationUtils = $this->get('default.authentication_utils');
+			$authenticationUtils = $this->get('security.authentication_utils');
 			$lastUsername = $authenticationUtils->getLastUsername();
 				
 					
