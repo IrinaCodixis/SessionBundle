@@ -1,3 +1,7 @@
+mipa_session_mipa_user:
+    resource: "@MipaSessionBundle/Resources/config/routing/users.yml"
+    prefix:   /mipa_user
+
 mipa_session_homepage:
     path:     /hello/{name}
     defaults: { _controller: MipaSessionBundle:Default:index }

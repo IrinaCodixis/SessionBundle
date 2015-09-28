@@ -1,0 +1,30 @@
+mipa_user:
+    path:     /
+    defaults: { _controller: "MipaSessionBundle:users:index" }
+
+mipa_user_show:
+    path:     /{id}/show
+    defaults: { _controller: "MipaSessionBundle:users:show" }
+
+mipa_user_new:
+    path:     /new
+    defaults: { _controller: "MipaSessionBundle:users:new" }
+
+mipa_user_create:
+    path:     /create
+    defaults: { _controller: "MipaSessionBundle:users:create" }
+    methods:  POST
+
+mipa_user_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "MipaSessionBundle:users:edit" }
+
+mipa_user_update:
+    path:     /{id}/update
+    defaults: { _controller: "MipaSessionBundle:users:update" }
+    methods:  [POST, PUT]
+
+mipa_user_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "MipaSessionBundle:users:delete" }
+    methods:  [POST, DELETE]
