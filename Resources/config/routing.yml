@@ -1,6 +1,6 @@
 mipa_session_mipa_user:
     resource: "@MipaSessionBundle/Resources/config/routing/users.yml"
-    prefix:   /mipa_user
+    prefix:   /users
 
 mipa_session_homepage:
     path:     /hello/{name}
