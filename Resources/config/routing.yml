@@ -1,0 +1,3 @@
+mipa_session_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: MipaSessionBundle:Default:index }
