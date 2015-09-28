@@ -3,7 +3,7 @@
 
         <form class="form-signin" method ="POST" action="{{path('mipa_session_homepage')}}" data-validate="parsley">
             <h2 class="form-signin-heading">Please sign in</h2>
-            <input type="text" id="username" class="input-block-level" name="username" placeholder="Username" data-trigger="change" data-required="true" data-type="email">
+            <input type="text" id="username" class="input-block-level" name="username" placeholder="Username" data-trigger="change" data-required="true" data-type="email" value="{{ last_username }}"/>
             </br>
 			<input type="password" class="input-block-level" name="password" placeholder="Password" data-trigger="change" data-required="true">
             </br>
