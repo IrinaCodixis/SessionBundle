@@ -3,5 +3,9 @@ mipa_session_mipa_user:
     prefix:   /users
 
 mipa_session_homepage:
-    path:     /hello/{name}
+    pattern:  /login
     defaults: { _controller: MipaSessionBundle:Default:index }
+
+mipa_session_logout:
+    pattern:  /logout
+    defaults: { _controller: MipaSessionBundle:Default:logout }
